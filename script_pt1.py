@@ -48,14 +48,18 @@ def save_dict_and_corpus(start, end, dataset_nro):
     return dictionary, corpus
 
 
+# Run the code separately for each dataset:
 
-#dictionary, corpus = save_dict_and_corpus(1, 9, 1) #start 2011, end 2018, dataset 1
+dictionary, corpus = save_dict_and_corpus(1, 9, 1) #start 2011, end 2018, dataset 1
 #dictionary, corpus = save_dict_and_corpus(9, 11, 2) #start 2019, end 2020, dataset 2
 #dictionary, corpus = save_dict_and_corpus(11, 12, 3) #start 2021, end 2021, dataset 3
-dictionary, corpus = save_dict_and_corpus(12, 15, 4) #start 2022, end 2024, dataset 4
+#dictionary, corpus = save_dict_and_corpus(12, 15, 4) #start 2022, end 2024, dataset 4
+
+
 
 #dictionary = corpora.Dictionary.load("project/dict_dataset_1")
 #corpus = corpora.MmCorpus("project/corpus_dataset_1.mm")
+
 
 
 """
@@ -96,11 +100,11 @@ for token, score in top_tfidf_tokens:
 
 
 #Saving the results in txt files
-with open("project/top_50_frequent_4.txt", "w", encoding="utf-8") as f:
+with open("project/top_50_frequent_1.txt", "w", encoding="utf-8") as f:
     for token, count in most_common_tokens:
         f.write(f"{token}\t{count}\n")
 
-with open("project/top_50_tfidf_4.txt", "w", encoding="utf-8") as f:
+with open("project/top_50_tfidf_1.txt", "w", encoding="utf-8") as f:
     for token, score in top_tfidf_tokens:
         f.write(f"{token}\t{score:.6f}\n")
 
