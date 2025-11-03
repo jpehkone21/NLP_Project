@@ -27,6 +27,7 @@ saves the texts in their own monthly files.
   
   Implements tasks 6, 7, 8, 9 and 10 from the project description
 
+The results folder holds the intermediate results, such as extracted texts, corpuses and trained word2vec models.  (Note! files corpus_dataset_1.mm (dataset 1 corpus) and dict_dataset_1 (dataset 1 dictionary) were too large files to add to GitHub so they are missing)
 
 
 
